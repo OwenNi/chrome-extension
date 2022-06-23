@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+    <form action = "/login" method = "post">
+        {% csrf_token %}
+    Username: <input type="text" name = "username" id="username"> <br>
+    Password: <input type="password" name="pwd" id="pwd"> <br>
+    <input type="submit" value="sign in">
+    <br>
+    <input type="reset" value="reset">
+    <a href="/popup.html">back</a>
+
+    </form>
+
+  </body>
+</html>
